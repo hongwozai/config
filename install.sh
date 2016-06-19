@@ -6,5 +6,10 @@ function setup_percol() {
 }
 
 function setup_bash() {
-    sed -i '$asource ~/config/project.sh' ~/.bashrc
+    echo "setup bash configure."
+}
+
+function setup_tmux() {
+    echo "setup tmux configure."
+    cp tmux.conf ~/.tmux.conf
 }
